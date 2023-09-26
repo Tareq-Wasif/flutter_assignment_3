@@ -127,7 +127,7 @@ class CartPage extends StatelessWidget {
         centerTitle: true,
       ),
       body: Center(
-        child: Text('Total number of products: $totalProductsBought'),
+        child: Text('Total product: $totalProductsBought'),
       ),
     );
   }
