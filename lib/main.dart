@@ -83,8 +83,11 @@ class _ProductListState extends State<ProductList> {
               mainAxisSize: MainAxisSize.min,
               children: [
                 Text('count  ${product.count}'),
-                ElevatedButton(
-                  onPressed: () {
+                SizedBox(
+                  width:95,
+              height: 30,
+              child: ElevatedButton(
+                 onPressed: () {
                     setState(() {
                       product.count++;
                       totalProductsBought++; // Increment the total count
@@ -93,9 +96,9 @@ class _ProductListState extends State<ProductList> {
                       }
                     });
                   },
-                  child: Text("Buy Now"),
+                 child: Text("Buy Now"),
                 ),
-              ],
+                )]
             ),
           );
           },
